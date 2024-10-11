@@ -32,7 +32,7 @@ fi
 check_mysql() {
     if command -v mysql >/dev/null 2>&1; then
         echo "MySQL/MariaDB is installed."
-        if systemctl is-active --quiet mysqld || systemctl is-active --quiet mariadb; then
+        if systemctl is-active --quiet mysqld || systemctl is-active --quiet mysql || systemctl is-active --quiet mariadb; then
             echo "MySQL/MariaDB is running."
             return 0
         else
