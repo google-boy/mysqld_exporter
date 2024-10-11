@@ -50,7 +50,7 @@ sudo systemctl restart mysqld-exporter
 
 ```
 ....
-job: mysql-exporter
+job: mysqld_exporter
 static_configs:
     - targets:
         - 102.220.23.55:9104
