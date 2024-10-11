@@ -50,7 +50,7 @@ sudo systemctl restart mysqld-exporter
 
 ```
 ....
-job: mysqld_exporter
+job_name: mysqld_exporter
 static_configs:
     - targets:
         - ip:9104
